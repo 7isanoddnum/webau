@@ -1,0 +1,111 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    padding: 10px 20px; /* Reduced padding */
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 70px; /* Increased height slightly for better text fitting */
+    box-sizing: border-box; /* Ensures padding doesn't affect overall height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the content */
+    font-family: 'Times New Roman', serif;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    color:white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    align-items: center; /* Vertically center the links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Content Wrapper - Centered Column */
+.content-wrapper {
+    width: 60%; /* Set a fixed width for the central column */
+    max-width: 900px; /* Prevent it from getting too wide */
+    margin: 70px auto 0; /* Centers the content and adds space from the navbar */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional, for a slight shadow around the content */
+    border-radius: 8px; /* Rounded corners for a more modern look */
+}
+
+/* Review Content */
+.review-content {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h3 {
+    color: #444;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Link and Button Styles */
+a {
+    text-decoration: none;
+    color: inherit; /* Ensures the text color from the card remains */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Review placeholder style */
+.review-placeholder {
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.review-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
